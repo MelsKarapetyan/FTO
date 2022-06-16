@@ -1,4 +1,8 @@
 .ddHide{ display: none; }
+header img{
+    width: 65px;
+    height: 29px;
+}
 .sort{
     display: flex;
     align-items: center;
@@ -156,4 +160,7 @@ header img{
         font-size: 16px;
     }
     .pictures{ padding: 0 40px; }
+}
+@media only screen and (max-width: 1300px){
+    .styleSortButtons{ overflow: hidden; }
 }

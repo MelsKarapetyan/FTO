@@ -119,6 +119,7 @@ hr{
     }
     .respDesign div:nth-child(2){
         margin-top: 0;
+        margin-left: 25px;
     }
 }
 @media only screen and (max-width: 600px){
@@ -128,12 +129,12 @@ hr{
         height: 200px;
     }   
 }
+@media only screen and (max-width: 420px){
+    .tours{ margin-top: 160px; }
+    .respDesign img{ margin-top: 0px; }
+}
 
 
 
 
 
-
-
-
-.tours{ margin-top: 150px; }

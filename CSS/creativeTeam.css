@@ -1,0 +1,129 @@
+header img{
+    width: 81px;
+    height: 37px;
+}
+.respDesign{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.respDesign img{
+    height: 300px;
+    margin: 40px 15px;
+    border-radius: 15px;    
+    margin-top: 30px;
+    margin-left: 60px;
+    box-shadow: 5px 5px 15px 3px rgb(156, 155, 155);
+    transition: 0.3s;
+    margin-top: 110px;
+}
+.respDesign div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    font-family: arial;
+    margin-top: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.login{
+    font-family: arial;
+    border: 2px solid #3D3D3D;
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 7px;
+    color: #3D3D3D;
+    font-weight: bold;
+    transition: 0.4s;
+    text-decoration: none;
+    font-size: 13px;
+    width: 120px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+.login:hover{
+    background-color: #FFD302;
+    border: 2px solid #FFD302;
+}
+.loginA{ text-decoration: none; }
+fieldset{
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    border-radius: 10px;
+    border: 2px solid #3D3D3D;
+    justify-content: center;
+}
+form{
+    margin-bottom: -120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.formDiv{ display: flex; }
+.formDiv input{
+    margin: 5px 0;
+    border-radius: 5px;
+    font-family: arial;
+    padding: 5px 15px;
+    border: 2px solid #3D3D3D;
+}
+.signIn{
+    border: 2px solid #3D3D3D;
+    cursor: pointer;
+    border-radius: 7px;
+    color: #3D3D3D;
+    font-weight: bold;
+    font-size: 13px;
+    width: 120px;
+    background-color: transparent;
+    transition: 0.3s;
+}
+.signIn:hover{
+    background-color: #FFD302;
+    border: 2px solid #FFD302;
+}
+.miniDivForms{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.bigFormDiv{
+    width: 100%;
+    font-family: arial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+hr{
+    width: 100%;
+    background-color: #3D3D3D;
+    border: 0.1px solid #3D3D3D;
+    margin: 50px 0;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+/******************************************************** Responsive design **********************************************************/
+
+@media only screen and (max-width: 1135px){
+    .respDesign{ flex-direction: column; }
+    .respDesign img{
+        margin-left: 0;
+        margin-top: 120px;
+    }
+    .respDesign div:nth-child(2){
+        margin-top: 0;
+    }
+}
+@media only screen and (max-width: 600px){
+    .respDesign img{
+        margin-left: 12px;
+        margin-top: 140px;
+        height: 200px;
+    }   
+}

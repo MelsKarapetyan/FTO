@@ -1,0 +1,159 @@
+.ddHide{ display: none; }
+.sort{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.styleSortButtons button{
+    margin-top: 140px;
+    margin-left: 20px;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #3D3D3D;
+    transition: 0.4s;
+}
+.styleSortButtons button:hover{
+    background-color: #FFD302;
+    box-shadow: 1px 1px 10px 1px rgb(192, 192, 192);
+}
+.all-divs{
+    color: #3D3D3D;
+    background-color: #FFD302;
+    box-shadow: 1px 1px 10px 1px rgb(192, 192, 192);
+}
+.pictures{ 
+    padding: 0 150px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.obj-div-1{
+    width: 300px;
+    height: 450px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px 3px rgb(222, 220, 220);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+    transition: 0.3s;
+}
+.obj-div-2{ opacity: 0; }
+.obj-div-1:hover .obj-div-2{ opacity: 1; }
+.obj-div-1:hover{
+    width: 290px;
+    height: 440px;
+    box-shadow: 3px 3px 15px 1px rgb(222, 220, 220);
+    background: #3D3D3D;
+    font-family: arial;
+    font-size: 16px;
+    border-radius: 10px;
+    color: #eeff02;
+    font-weight: 700;
+    border: 2px solid #3D3D3D;
+    padding: 20px;
+}
+.object{ 
+    margin: 40px 35px; 
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.object:hover{ margin: 35px 30px; }
+.object p{
+    font-weight: bold;
+    font-family: arial;
+}
+.a_link{
+    font-family: arial;
+    border: 2px solid #3D3D3D;
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 7px;
+    color: #3D3D3D;
+    font-weight: bold;
+    transition: 0.4s;
+    text-decoration: none;
+    font-size: 13px;
+}
+.a_link:hover{
+    background-color: #FFCF0D;
+    border: 2px solid #FFD302;
+}
+header img{
+    width: 81px;
+    height: 37px;
+}
+.pic1{ background-image: url(../img/creactive.jpg); }
+.pic2{ background-image: url(../img/ethnicTravelArmenia.jpg); }
+.pic3{ background-image: url(../img/hamshen.jpg); }
+.pic4{ background-image: url(../img/mamik.jpg); background-size: 105%; }
+.pic5{ background-image: url(../img/mihr.jpg); }
+.pic6{ background-image: url(../img/creactive.jpg); }
+
+/******************************************************** Responsive design **********************************************************/
+
+@media only screen and (max-width: 1410px){
+    .pictures{ padding: 0 70px; }
+}
+@media only screen and (max-width: 1270px){
+    #tavoush { margin-top: 30px; }
+    #aragacotn { margin-top: 30px; }
+    #kotayq{ margin-top: 30px; }
+    #gegharkunik { margin-top: 30px; }
+    #armavir { margin-top: 30px;}
+    #ararat { margin-top: 30px; }
+    #vayotsDzor { margin-top: 30px; }
+    #syunik { margin-top: 30px; }
+}
+@media only screen and (max-width: 1250px){
+    .obj-div-1{
+        width: 250px;
+        height: 375px;
+    }
+    .obj-div-1:hover{
+        width: 240px;
+        height: 360px;
+    }
+    .pictures{ padding: 0 100px; }
+}
+@media only screen and (max-width: 840px){
+    .obj-div-1{
+        width: 230px;
+        height: 345px;
+    }
+    .obj-div-1:hover{
+        width: 220px;
+        height: 330px;
+    }
+    .pictures{ padding: 0 60px; }
+}
+@media only screen and (max-width: 720px){
+    .obj-div-1{
+        width: 150px;
+        height: 225px;
+    }
+    .obj-div-1:hover{
+        width: 140px;
+        height: 210px;
+        font-size: 12px;
+    }
+    .pictures{ padding: 0 40px; }
+}
+@media only screen and (max-width: 530px){
+    .obj-div-1{
+        width: 300px;
+        height: 450px;
+    }
+    .obj-div-1:hover{
+        width: 290px;
+        height: 440px;
+        font-size: 16px;
+    }
+    .pictures{ padding: 0 40px; }
+}

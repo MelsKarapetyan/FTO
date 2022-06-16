@@ -2,6 +2,9 @@ header img{
     width: 81px;
     height: 37px;
 }
+.tours{
+    margin-top: 150px;
+}
 .respDesign{
     display: flex;
     flex-direction: row;
@@ -21,7 +24,7 @@ header img{
     display: flex;
     flex-direction: column;
     font-family: arial;
-    margin-top: 150px;
+    margin-top: 50px;
     margin-left: 50px;
     margin-right: 50px;
 }

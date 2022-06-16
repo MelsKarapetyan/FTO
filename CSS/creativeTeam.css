@@ -1,10 +1,8 @@
 header img{
-    width: 81px;
-    height: 37px;
+    width: 65px;
+    height: 29px;
 }
-.tours{
-    margin-top: 150px;
-}
+.tours{ margin-top: 150px; }
 .respDesign{
     display: flex;
     flex-direction: row;
@@ -130,3 +128,12 @@ hr{
         height: 200px;
     }   
 }
+
+
+
+
+
+
+
+
+.tours{ margin-top: 150px; }

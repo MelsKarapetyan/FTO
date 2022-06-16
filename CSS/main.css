@@ -6,6 +6,10 @@ body{
     border: 0;
 }
 /**************************************************************** header ***********************************************************/
+header img{
+    width: 65px;
+    height: 29px;
+}
 header{
     width: 100%;
     background-color: #3D3D3D;
@@ -169,5 +173,8 @@ iframe{
     iframe{
         width: 350px;
         height: 175px;
+    }
+    header{
+        padding: 10px 0px;
     }
 }

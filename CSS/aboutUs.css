@@ -1,6 +1,6 @@
 header img{
-    width: 81px;
-    height: 37px;
+    width: 65px;
+    height: 29px;
 }
 #about-us a{ color: #FFD302; }
 .aboutUS{
@@ -10,4 +10,20 @@ header img{
     margin-top: 150px;
     margin-left: 12%;
     margin-right: 12%;
+}
+.a_link{
+    font-family: arial;
+    border: 2px solid #3D3D3D;
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 7px;
+    color: #3D3D3D;
+    font-weight: bold;
+    transition: 0.4s;
+    text-decoration: none;
+    font-size: 13px;
+}
+.a_link:hover{
+    background-color: #FFCF0D;
+    border: 2px solid #FFD302;
 }

@@ -11,12 +11,20 @@ const armavirBtn = document.querySelector("#armavir");
 const araratBtn = document.querySelector("#ararat");
 const vayotsDzorBtn = document.querySelector("#vayotsDzor");
 const syunikBtn = document.querySelector("#syunik");
+const allBtn2Btn = document.querySelector("#allBtn2");
+const qaylarshavBtn = document.querySelector("#qaylarshav");
+const autoBtn = document.querySelector("#auto");
+const allBtn3Btn = document.querySelector("#allBtn3");
+const kazmakerputyunBtn = document.querySelector("#kazmakerputyun");
+const anhatBtn = document.querySelector("#anhat");
 
 let object = [
     {
         name: "Creative tour",
         ID: "object",
         ID2: "gegharkunik",
+        ID3: "qaylarshav",
+        ID4: "kazmakerputyun",
         bgImage: "pic1",
         tour1: "1. Փառակատար լեռ, Հայելի լիճ",
         tour2: "2. Վերելք Շարայի լեռ",
@@ -27,6 +35,8 @@ let object = [
         name: "ethnic travel Armenia",
         ID: "object",
         ID2: "syunik",
+        ID3: "qaylarshav",
+        ID4: "kazmakerputyun",
         bgImage: "pic2",
         tour1: "1. Սյունիքի գանձեր՝ Հին Խոտ, Հին Շինուհայր, Հին Հալիձոր",
         tour2: "",
@@ -37,6 +47,8 @@ let object = [
         name: "Hamshen tour",
         ID: "object",
         ID2: "syunik",
+        ID3: "qaylarshav",
+        ID4: "kazmakerputyun",
         bgImage: "pic3",
         tour1: "1. Մեղրի 2 օր",
         tour2: "2. ԱՆԻՆ՝ Խարկովից + Երերույք (բացառիկ)",
@@ -47,6 +59,8 @@ let object = [
         name: "Mamik",
         ID: "object",
         ID2: "yerevan",
+        ID3: "auto",
+        ID4: "kazmakerputyun",
         bgImage: "pic4",
         tour1: "1. Ասորական մշակույթի օր",
         tour2: "",
@@ -57,6 +71,8 @@ let object = [
         name: "Mihr voyage",
         ID: "object",
         ID2: "aragacotn",
+        ID3: "qaylarshav",
+        ID4: "kazmakerputyun",
         bgImage: "pic5",
         tour1: "1. Դեպի Դաշտադեմ",
         tour2: "",
@@ -67,6 +83,8 @@ let object = [
         name: "Denis",
         ID: "object",
         ID2: "lori",
+        ID3: "auto",
+        ID4: "anhat",
         bgImage: "pic5",
         tour1: "1. Դսեղի հրաշքները",
         tour2: "",
@@ -87,6 +105,10 @@ let armavir = object.filter((region) => region.ID2 == "armavir");
 let ararat = object.filter((region) => region.ID2 == "ararat");
 let vayotsDzor = object.filter((region) => region.ID2 == "vayotsDzor");
 let syunik = object.filter((region) => region.ID2 == "syunik");
+let qaylarshav = object.filter((region) => region.ID3 == "qaylarshav");
+let auto = object.filter((region) => region.ID3 == "auto");
+let kazmakerputyun = object.filter((region) => region.ID4 == "kazmakerputyun");
+let anhat = object.filter((region) => region.ID4 == "anhat");
 
 // for adding all items at browser leading
 for(let i = 0; i < All.length; i++){
@@ -121,6 +143,8 @@ function filterFun(Region){
         let userDiv = document.createElement("div");
         userDiv.classList.toggle(`${items[i].ID}`);
         userDiv.classList.toggle(`${items[i].ID2}`);
+        userDiv.classList.toggle(`${items[i].ID3}`);
+        userDiv.classList.toggle(`${items[i].ID4}`);
         userDiv.innerHTML= `
         <div class="obj-div-1 ${items[i].bgImage}"> 
             <div class="obj-div-2"> 
@@ -139,37 +163,201 @@ function filterFun(Region){
 
 allbtn.onclick = function(){
     filterFun(All);
+    allbtn.style.backgroundColor = "#FFCF0D";
+    yerevanBtn.style.backgroundColor = "#f0f0f0";
+    shirakBtn.style.backgroundColor = "#f0f0f0";
+    loriBtn.style.backgroundColor = "#f0f0f0";
+    tavoushBtn.style.backgroundColor = "#f0f0f0";
+    aragacotnBtn.style.backgroundColor = "#f0f0f0";
+    kotayqBtn.style.backgroundColor = "#f0f0f0";
+    gegharkunikBtn.style.backgroundColor = "#f0f0f0";
+    armavirBtn.style.backgroundColor = "#f0f0f0";
+    araratBtn.style.backgroundColor = "#f0f0f0";
+    vayotsDzorBtn.style.backgroundColor = "#f0f0f0";
+    syunikBtn.style.backgroundColor = "#f0f0f0";
 }
 yerevanBtn.onclick = function(){
     filterFun(yerevan);
+    allbtn.style.backgroundColor = "#f0f0f0";
+    yerevanBtn.style.backgroundColor = "#FFCF0D";
+    shirakBtn.style.backgroundColor = "#f0f0f0";
+    loriBtn.style.backgroundColor = "#f0f0f0";
+    tavoushBtn.style.backgroundColor = "#f0f0f0";
+    aragacotnBtn.style.backgroundColor = "#f0f0f0";
+    kotayqBtn.style.backgroundColor = "#f0f0f0";
+    gegharkunikBtn.style.backgroundColor = "#f0f0f0";
+    armavirBtn.style.backgroundColor = "#f0f0f0";
+    araratBtn.style.backgroundColor = "#f0f0f0";
+    vayotsDzorBtn.style.backgroundColor = "#f0f0f0";
+    syunikBtn.style.backgroundColor = "#f0f0f0";
 }
 shirakBtn.onclick = function(){
     filterFun(shirak);
+    allbtn.style.backgroundColor = "#f0f0f0";
+    yerevanBtn.style.backgroundColor = "#f0f0f0";
+    shirakBtn.style.backgroundColor = "#FFCF0D";
+    loriBtn.style.backgroundColor = "#f0f0f0";
+    tavoushBtn.style.backgroundColor = "#f0f0f0";
+    aragacotnBtn.style.backgroundColor = "#f0f0f0";
+    kotayqBtn.style.backgroundColor = "#f0f0f0";
+    gegharkunikBtn.style.backgroundColor = "#f0f0f0";
+    armavirBtn.style.backgroundColor = "#f0f0f0";
+    araratBtn.style.backgroundColor = "#f0f0f0";
+    vayotsDzorBtn.style.backgroundColor = "#f0f0f0";
+    syunikBtn.style.backgroundColor = "#f0f0f0";
 }
 loriBtn.onclick = function(){
-    filterFun(loriBtn);
+    filterFun(lori);
+    allbtn.style.backgroundColor = "#f0f0f0";
+    yerevanBtn.style.backgroundColor = "#f0f0f0";
+    shirakBtn.style.backgroundColor = "#f0f0f0";
+    loriBtn.style.backgroundColor = "#FFCF0D";
+    tavoushBtn.style.backgroundColor = "#f0f0f0";
+    aragacotnBtn.style.backgroundColor = "#f0f0f0";
+    kotayqBtn.style.backgroundColor = "#f0f0f0";
+    gegharkunikBtn.style.backgroundColor = "#f0f0f0";
+    armavirBtn.style.backgroundColor = "#f0f0f0";
+    araratBtn.style.backgroundColor = "#f0f0f0";
+    vayotsDzorBtn.style.backgroundColor = "#f0f0f0";
+    syunikBtn.style.backgroundColor = "#f0f0f0";
 }
 tavoushBtn.onclick = function(){
     filterFun(tavoush);
+    allbtn.style.backgroundColor = "#f0f0f0";
+    yerevanBtn.style.backgroundColor = "#f0f0f0";
+    shirakBtn.style.backgroundColor = "#f0f0f0";
+    loriBtn.style.backgroundColor = "#f0f0f0";
+    tavoushBtn.style.backgroundColor = "#FFCF0D";
+    aragacotnBtn.style.backgroundColor = "#f0f0f0";
+    kotayqBtn.style.backgroundColor = "#f0f0f0";
+    gegharkunikBtn.style.backgroundColor = "#f0f0f0";
+    armavirBtn.style.backgroundColor = "#f0f0f0";
+    araratBtn.style.backgroundColor = "#f0f0f0";
+    vayotsDzorBtn.style.backgroundColor = "#f0f0f0";
+    syunikBtn.style.backgroundColor = "#f0f0f0";
 }
 aragacotnBtn.onclick = function(){
     filterFun(aragacotn);
+    allbtn.style.backgroundColor = "#f0f0f0";
+    yerevanBtn.style.backgroundColor = "#f0f0f0";
+    shirakBtn.style.backgroundColor = "#f0f0f0";
+    loriBtn.style.backgroundColor = "#f0f0f0";
+    tavoushBtn.style.backgroundColor = "#f0f0f0";
+    aragacotnBtn.style.backgroundColor = "#FFCF0D";
+    kotayqBtn.style.backgroundColor = "#f0f0f0";
+    gegharkunikBtn.style.backgroundColor = "#f0f0f0";
+    armavirBtn.style.backgroundColor = "#f0f0f0";
+    araratBtn.style.backgroundColor = "#f0f0f0";
+    vayotsDzorBtn.style.backgroundColor = "#f0f0f0";
+    syunikBtn.style.backgroundColor = "#f0f0f0";
 }
 kotayqBtn.onclick = function(){
     filterFun(kotayq);
+    allbtn.style.backgroundColor = "#f0f0f0";
+    yerevanBtn.style.backgroundColor = "#f0f0f0";
+    shirakBtn.style.backgroundColor = "#f0f0f0";
+    loriBtn.style.backgroundColor = "#f0f0f0";
+    tavoushBtn.style.backgroundColor = "#f0f0f0";
+    aragacotnBtn.style.backgroundColor = "#f0f0f0";
+    kotayqBtn.style.backgroundColor = "#FFCF0D";
+    gegharkunikBtn.style.backgroundColor = "#f0f0f0";
+    armavirBtn.style.backgroundColor = "#f0f0f0";
+    araratBtn.style.backgroundColor = "#f0f0f0";
+    vayotsDzorBtn.style.backgroundColor = "#f0f0f0";
+    syunikBtn.style.backgroundColor = "#f0f0f0";
 }
 gegharkunikBtn.onclick = function(){
     filterFun(gegharkunik);
+    allbtn.style.backgroundColor = "#f0f0f0";
+    yerevanBtn.style.backgroundColor = "#f0f0f0";
+    shirakBtn.style.backgroundColor = "#f0f0f0";
+    loriBtn.style.backgroundColor = "#f0f0f0";
+    tavoushBtn.style.backgroundColor = "#f0f0f0";
+    aragacotnBtn.style.backgroundColor = "#f0f0f0";
+    kotayqBtn.style.backgroundColor = "#f0f0f0";
+    gegharkunikBtn.style.backgroundColor = "#FFCF0D";
+    armavirBtn.style.backgroundColor = "#f0f0f0";
+    araratBtn.style.backgroundColor = "#f0f0f0";
+    vayotsDzorBtn.style.backgroundColor = "#f0f0f0";
+    syunikBtn.style.backgroundColor = "#f0f0f0";
 }
 armavirBtn.onclick = function(){
     filterFun(armavir);
+    allbtn.style.backgroundColor = "#f0f0f0";
+    yerevanBtn.style.backgroundColor = "#f0f0f0";
+    shirakBtn.style.backgroundColor = "#f0f0f0";
+    loriBtn.style.backgroundColor = "#f0f0f0";
+    tavoushBtn.style.backgroundColor = "#f0f0f0";
+    aragacotnBtn.style.backgroundColor = "#f0f0f0";
+    kotayqBtn.style.backgroundColor = "#f0f0f0";
+    gegharkunikBtn.style.backgroundColor = "#f0f0f0";
+    armavirBtn.style.backgroundColor = "#FFCF0D";
+    araratBtn.style.backgroundColor = "#f0f0f0";
+    vayotsDzorBtn.style.backgroundColor = "#f0f0f0";
+    syunikBtn.style.backgroundColor = "#f0f0f0";
 }
 araratBtn.onclick = function(){
     filterFun(ararat);
+    allbtn.style.backgroundColor = "#f0f0f0";
+    yerevanBtn.style.backgroundColor = "#f0f0f0";
+    shirakBtn.style.backgroundColor = "#f0f0f0";
+    loriBtn.style.backgroundColor = "#f0f0f0";
+    tavoushBtn.style.backgroundColor = "#f0f0f0";
+    aragacotnBtn.style.backgroundColor = "#f0f0f0";
+    kotayqBtn.style.backgroundColor = "#f0f0f0";
+    gegharkunikBtn.style.backgroundColor = "#f0f0f0";
+    armavirBtn.style.backgroundColor = "#f0f0f0";
+    araratBtn.style.backgroundColor = "#FFCF0D";
+    vayotsDzorBtn.style.backgroundColor = "#f0f0f0";
+    syunikBtn.style.backgroundColor = "#f0f0f0";
 }
 vayotsDzorBtn.onclick = function(){
     filterFun(vayotsDzor);
+    allbtn.style.backgroundColor = "#f0f0f0";
+    yerevanBtn.style.backgroundColor = "#f0f0f0";
+    shirakBtn.style.backgroundColor = "#f0f0f0";
+    loriBtn.style.backgroundColor = "#f0f0f0";
+    tavoushBtn.style.backgroundColor = "#f0f0f0";
+    aragacotnBtn.style.backgroundColor = "#f0f0f0";
+    kotayqBtn.style.backgroundColor = "#f0f0f0";
+    gegharkunikBtn.style.backgroundColor = "#f0f0f0";
+    armavirBtn.style.backgroundColor = "#f0f0f0";
+    araratBtn.style.backgroundColor = "#f0f0f0";
+    vayotsDzorBtn.style.backgroundColor = "#FFCF0D";
+    syunikBtn.style.backgroundColor = "#f0f0f0";
 }
 syunikBtn.onclick = function(){
     filterFun(syunik);
+    allbtn.style.backgroundColor = "#f0f0f0";
+    yerevanBtn.style.backgroundColor = "#f0f0f0";
+    shirakBtn.style.backgroundColor = "#f0f0f0";
+    loriBtn.style.backgroundColor = "#f0f0f0";
+    tavoushBtn.style.backgroundColor = "#f0f0f0";
+    aragacotnBtn.style.backgroundColor = "#f0f0f0";
+    kotayqBtn.style.backgroundColor = "#f0f0f0";
+    gegharkunikBtn.style.backgroundColor = "#f0f0f0";
+    armavirBtn.style.backgroundColor = "#f0f0f0";
+    araratBtn.style.backgroundColor = "#f0f0f0";
+    vayotsDzorBtn.style.backgroundColor = "#f0f0f0";
+    syunikBtn.style.backgroundColor = "#FFCF0D";
+}
+qaylarshavBtn.onclick = function(){
+    filterFun(qaylarshav);
+    qaylarshavBtn.style.backgroundColor = "#FFCF0D";
+    autoBtn.style.backgroundColor = "#f0f0f0";
+}
+autoBtn.onclick = function(){
+    filterFun(auto);
+    qaylarshavBtn.style.backgroundColor = "#f0f0f0";
+    autoBtn.style.backgroundColor = "#FFCF0D";
+}
+kazmakerputyunBtn.onclick = function(){
+    filterFun(kazmakerputyun);
+    kazmakerputyunBtn.style.backgroundColor = "#FFCF0D";
+    anhatBtn.style.backgroundColor = "#f0f0f0";
+}
+anhatBtn.onclick = function(){
+    filterFun(anhat);
+    kazmakerputyunBtn.style.backgroundColor = "#f0f0f0";
+    anhatBtn.style.backgroundColor = "#FFCF0D";
 }

@@ -3,13 +3,18 @@ header img{
     width: 65px;
     height: 29px;
 }
+.filter{ 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .sort{
     display: flex;
-    align-items: center;
     flex-direction: column;
+    margin-top: 140px;
 }
 .styleSortButtons button{
-    margin-top: 140px;
+    margin-top: 20px;
     margin-left: 20px;
     padding: 10px 12px;
     border: none;
@@ -23,10 +28,10 @@ header img{
     background-color: #FFD302;
     box-shadow: 1px 1px 10px 1px rgb(192, 192, 192);
 }
-.all-divs{
+.provinces span{ visibility: hidden; }
+.allBtn{
     color: #3D3D3D;
     background-color: #FFD302;
-    box-shadow: 1px 1px 10px 1px rgb(192, 192, 192);
 }
 .pictures{ 
     padding: 0 150px; 
@@ -56,7 +61,7 @@ header img{
     font-family: arial;
     font-size: 16px;
     border-radius: 10px;
-    color: #eeff02;
+    color: #FFCC00;
     font-weight: 700;
     border: 2px solid #3D3D3D;
     padding: 20px;
@@ -105,15 +110,19 @@ header img{
 @media only screen and (max-width: 1410px){
     .pictures{ padding: 0 70px; }
 }
-@media only screen and (max-width: 1270px){
-    #tavoush { margin-top: 30px; }
-    #aragacotn { margin-top: 30px; }
-    #kotayq{ margin-top: 30px; }
-    #gegharkunik { margin-top: 30px; }
-    #armavir { margin-top: 30px;}
-    #ararat { margin-top: 30px; }
-    #vayotsDzor { margin-top: 30px; }
-    #syunik { margin-top: 30px; }
+@media only screen and (max-width: 1480px){
+    .provinces{ 
+        width: 100%;
+        display: flex;
+        overflow-x: scroll; 
+    }
+    #vayotsDzor span{ visibility: hidden; }
+    #typeOfTour{ 
+        display: flex;
+        width: 80%;
+        justify-content: flex-start;
+    }
+    .filter{ display: block; }
 }
 @media only screen and (max-width: 1250px){
     .obj-div-1{
@@ -161,6 +170,6 @@ header img{
     }
     .pictures{ padding: 0 40px; }
 }
-@media only screen and (max-width: 1300px){
-    .styleSortButtons{ overflow: hidden; }
+@media only screen and (max-width: 450px){
+    .sort{ padding: 0; }
 }

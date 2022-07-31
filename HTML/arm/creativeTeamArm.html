@@ -60,7 +60,6 @@
                     </p> 
                 <span class="buttons">
                     <a href="#form" class="loginA" id="loginId1"> <button class="login"> ԳՐԱՆՑՎԵԼ </button> </a> <br>
-                    <a href="#" class="loginA" id="loginId1"> <button class="login"> ՎՃԱՐԵԼ </button> </a> <br>
                 </span>
                 <hr>
             </div>
@@ -87,7 +86,6 @@
                     </p>
                 <span class="buttons">
                     <a href="#form" class="loginA" id="loginId1"> <button class="login"> ԳՐԱՆՑՎԵԼ </button> </a> <br>
-                    <a href="#" class="loginA" id="loginId1"> <button class="login"> ՎՃԱՐԵԼ </button> </a> <br>
                 </span>
                 <hr>
             </div>
@@ -115,7 +113,6 @@
                     </p>
                 <span class="buttons">
                     <a href="#form" class="loginA" id="loginId1"> <button class="login"> ԳՐԱՆՑՎԵԼ </button> </a> <br>
-                    <a href="#" class="loginA" id="loginId1"> <button class="login"> ՎՃԱՐԵԼ </button> </a> <br>
                 </span>
                 <hr>
             </div>
@@ -127,12 +124,25 @@
             <form>
                 <fieldset>
                     <legend> Լրացրե՛ք անհրաժեշտ տվյալները </legend> <br>
-                    <input type="text" placeholder="Անուն" required>
-                    <input type="text" placeholder="Ազգանուն" required>
-                    <input type="email" placeholder="էլ․ հասցե" required>
-                    <input type="text" placeholder="Հեռախոսահամար" required>
-                    <input type="text" placeholder="կազմակերպիչ" required>
-                    <input type="text" placeholder="Տուրի անվանում" required>   
+                    <div class="textAreaForm">
+                        <input type="text" placeholder="Անուն" required>
+                        <input type="text" placeholder="Ազգանուն" required>
+                        <input type="email" placeholder="էլ․ հասցե" required>
+                        <input type="text" placeholder="Հեռախոսահամար" required>
+                    </div>
+                    <select id="organizer" name="կազմակերպություն">
+                        <option value="Creative Tour" selected>Creative tour</option>
+                        <option value="ethnic travel Armenia">ethnic travel Armenia</option>
+                        <option value="Hamshen tour">Hamshen tour</option>
+                        <option value="mamik">mamik</option>
+                        <option value="Mihr voyage">Mihr voyage</option>
+                        <option value="Denis">Denis</option>
+                    </select>
+                    <select id="tourName" name="Տուրի անվանում">
+                        <option value="Creative Tour" selected>Փառակատար լեռ, Հայելի լիճ</option>
+                        <option value="ethnic travel Armenia">Վերելք Շարայի լեռ</option>
+                        <option value="Hamshen tour">Գյումրի + Մինաս Ավետիսյանի տուն թանգարան</option>
+                    </select> 
                     <div class="miniDivForms">
                         <input type="submit" value="Գրանցվել" class="signIn">
                     </div> <br>

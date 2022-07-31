@@ -11,12 +11,6 @@ const armavirBtn = document.querySelector("#armavir");
 const araratBtn = document.querySelector("#ararat");
 const vayotsDzorBtn = document.querySelector("#vayotsDzor");
 const syunikBtn = document.querySelector("#syunik");
-const allBtn2Btn = document.querySelector("#allBtn2");
-const qaylarshavBtn = document.querySelector("#qaylarshav");
-const autoBtn = document.querySelector("#auto");
-const allBtn3Btn = document.querySelector("#allBtn3");
-const kazmakerputyunBtn = document.querySelector("#kazmakerputyun");
-const anhatBtn = document.querySelector("#anhat");
 
 let object = [
     {
@@ -105,10 +99,6 @@ let armavir = object.filter((region) => region.ID2 == "armavir");
 let ararat = object.filter((region) => region.ID2 == "ararat");
 let vayotsDzor = object.filter((region) => region.ID2 == "vayotsDzor");
 let syunik = object.filter((region) => region.ID2 == "syunik");
-let qaylarshav = object.filter((region) => region.ID3 == "qaylarshav");
-let auto = object.filter((region) => region.ID3 == "auto");
-let kazmakerputyun = object.filter((region) => region.ID4 == "kazmakerputyun");
-let anhat = object.filter((region) => region.ID4 == "anhat");
 
 // for adding all items at browser leading
 for(let i = 0; i < All.length; i++){
@@ -340,24 +330,4 @@ syunikBtn.onclick = function(){
     araratBtn.style.backgroundColor = "#f0f0f0";
     vayotsDzorBtn.style.backgroundColor = "#f0f0f0";
     syunikBtn.style.backgroundColor = "#FFCF0D";
-}
-qaylarshavBtn.onclick = function(){
-    filterFun(qaylarshav);
-    qaylarshavBtn.style.backgroundColor = "#FFCF0D";
-    autoBtn.style.backgroundColor = "#f0f0f0";
-}
-autoBtn.onclick = function(){
-    filterFun(auto);
-    qaylarshavBtn.style.backgroundColor = "#f0f0f0";
-    autoBtn.style.backgroundColor = "#FFCF0D";
-}
-kazmakerputyunBtn.onclick = function(){
-    filterFun(kazmakerputyun);
-    kazmakerputyunBtn.style.backgroundColor = "#FFCF0D";
-    anhatBtn.style.backgroundColor = "#f0f0f0";
-}
-anhatBtn.onclick = function(){
-    filterFun(anhat);
-    kazmakerputyunBtn.style.backgroundColor = "#f0f0f0";
-    anhatBtn.style.backgroundColor = "#FFCF0D";
 }

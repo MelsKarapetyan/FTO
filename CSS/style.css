@@ -103,7 +103,7 @@ header img{
 .pic3{ background-image: url(../img/hamshen.jpg); }
 .pic4{ background-image: url(../img/mamik.jpg); background-size: 105%; }
 .pic5{ background-image: url(../img/mihr.jpg); }
-.pic6{ background-image: url(../img/creactive.jpg); }
+.pic6{ background-image: url(../img/Denis.jpg); }
 
 /******************************************************** Responsive design **********************************************************/
 
@@ -115,6 +115,8 @@ header img{
         width: 100%;
         display: flex;
         overflow-x: scroll; 
+        padding: 15px 0;
+        margin-top: -35px;
     }
     #vayotsDzor span{ visibility: hidden; }
     #typeOfTour{ 

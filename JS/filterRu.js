@@ -18,9 +18,9 @@ let object = [
         ID: "object",
         ID2: "gegharkunik",
         bgImage: "pic1",
-        tour1: "1. Փառակատար լեռ, Հայելի լիճ",
-        tour2: "2. Վերելք Շարայի լեռ",
-        tour3: "3. Գյումրի + Մինաս Ավետիսյանի տուն-թանգարան",
+        tour1: "1. гора Паракатар, озеро Хайли ",
+        tour2: "2. поднятся гора Шара ",
+        tour3: "3. Гюмри + дом-музей",
         url: "HTML/arm/creativeTeamArm.html",
     },
     {
@@ -28,7 +28,7 @@ let object = [
         ID: "object",
         ID2: "syunik",
         bgImage: "pic2",
-        tour1: "1. Սյունիքի գանձեր՝ Հին Խոտ, Հին Շինուհայր, Հին Հալիձոր",
+        tour1: "1. Сокровище Сюника - Хин Хот, Хин Шинуайр, Хин Алидзор",
         tour2: "",
         tour3: "",
         url: "HTML/arm/creativeTeamArm.html",
@@ -39,8 +39,8 @@ let object = [
         ID2: "syunik",
         bgImage: "pic3",
         tour1: "1. Մեղրի 2 օր",
-        tour2: "2. ԱՆԻՆ՝ Խարկովից + Երերույք (բացառիկ)",
-        tour3: "3. Դսեղ և Քոբայր",
+        tour2: "2. Ани от Харьков + ягодица (исключительный)",
+        tour3: "3. Дсех и Кобайр",
         url: "HTML/arm/creativeTeamArm.html",
     },
     {
@@ -48,7 +48,7 @@ let object = [
         ID: "object",
         ID2: "yerevan",
         bgImage: "pic4",
-        tour1: "1. Ասորական մշակույթի օր",
+        tour1: "1. день асирийской культуры",
         tour2: "",
         tour3: "",
         url: "HTML/arm/creativeTeamArm.html",
@@ -58,7 +58,7 @@ let object = [
         ID: "object",
         ID2: "aragacotn",
         bgImage: "pic5",
-        tour1: "1. Դեպի Դաշտադեմ",
+        tour1: "1. к Даштадем",
         tour2: "",
         tour3: "",
         url: "HTML/arm/creativeTeamArm.html",
@@ -68,7 +68,7 @@ let object = [
         ID: "object",
         ID2: "lori",
         bgImage: "pic6",
-        tour1: "1. Դսեղի հրաշքները",
+        tour1: "1. Чудеса Дсеха",
         tour2: "",
         tour3: "",
         url: "HTML/arm/creativeTeamArm.html",
@@ -95,14 +95,14 @@ for(let i = 0; i < All.length; i++){
     userDiv.innerHTML= `
     <div class="obj-div-1 ${All[i].bgImage}"> 
         <div class="obj-div-2"> 
-            Կազմակերպվող տուրեր՝
+            организовые туры - 
                 <p>${All[i].tour1}</p>
                 <p>${All[i].tour2}</p>
                 <p>${All[i].tour3}</p>
         </div>
     </div>
     <h3> ${All[i].name} </h3><br>
-    <a href="${All[i].url}" class="a_link"> ՄԱՆՐԱՄԱՍՆԵՐ </a>
+    <a href="${All[i].url}" class="a_link"> Подробнее </a>
     `;
     container.appendChild(userDiv);
 }
@@ -126,14 +126,14 @@ function filterFun(Region){
         userDiv.innerHTML= `
         <div class="obj-div-1 ${items[i].bgImage}"> 
             <div class="obj-div-2"> 
-                Կազմակերպվող տուրեր՝
+                организовые туры - 
                     <p>${items[i].tour1}</p>
                     <p>${items[i].tour2}</p>
                     <p>${items[i].tour3}</p>
             </div>
         </div>
         <h3> ${items[i].name} </h3><br>
-        <a href="${items[i].url}" class="a_link"> ՄԱՆՐԱՄԱՍՆԵՐ </a>
+        <a href="${items[i].url}" class="a_link"> Подробнее </a>
         `;
         container.appendChild(userDiv);
     }
